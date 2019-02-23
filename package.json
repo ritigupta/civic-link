@@ -9,7 +9,7 @@
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5"
   },
-  "homepage": "https://ritigupta.github.io/civil-link",
+  "homepage": "https://ritigupta.github.io/civic-link",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
