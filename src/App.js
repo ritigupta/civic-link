@@ -11,16 +11,24 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import yellow from '@material-ui/core/colors/yellow';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Fab from '@material-ui/core/Fab';
 
 //import Typography from '@material-ui/core/Typography';
+
 
 import './App.css';
 
 
 const styles = theme => ({  
+  toolBar: {
+    textAlign: 'left',
+
+  },
   card: {
     width: 301,
-    height: 492
+    height: 492,
   },
   media: {
     height: 250,
@@ -31,7 +39,14 @@ const styles = theme => ({
     '&:hover': {
       backgroundColor: yellow[700],
     },
-  }
+  },
+  root: {
+    flexGrow: 1,
+  },
+  fab: {
+    margin: theme.spacing.unit,
+  },
+  
 });
 
 class App extends Component {
@@ -40,6 +55,19 @@ class App extends Component {
     const { classes } = this.props;  
     return (
       <div className="App"> 
+        <div className={classes.root}>
+          <AppBar color="none" 
+            style={{boxShadow: "none"}}>
+            <Toolbar className={classes.toolBar}>
+              <header>
+                CIVIC LINK
+              </header>
+              <Button className={classes.button}>get to know us</Button>
+              <Button className={classes.button}>get informed</Button>
+              <Fab variant="extended" className={classes.cssRoot}>get involved</Fab>
+            </Toolbar>
+          </AppBar>
+        </div>
         <body className="App-header">
           <div>
             <div class="flex-container">
