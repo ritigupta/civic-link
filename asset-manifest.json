@@ -1,14 +1,17 @@
 {
-  "main.css": "/civic-link/static/css/main.6780d918.chunk.css",
-  "main.js": "/civic-link/static/js/main.ad12d834.chunk.js",
-  "main.js.map": "/civic-link/static/js/main.ad12d834.chunk.js.map",
+  "main.css": "/civic-link/static/css/main.2d2dd4f2.chunk.css",
+  "main.js": "/civic-link/static/js/main.eccd1014.chunk.js",
+  "main.js.map": "/civic-link/static/js/main.eccd1014.chunk.js.map",
   "runtime~main.js": "/civic-link/static/js/runtime~main.24765f27.js",
   "runtime~main.js.map": "/civic-link/static/js/runtime~main.24765f27.js.map",
-  "static/js/2.47a0ac58.chunk.js": "/civic-link/static/js/2.47a0ac58.chunk.js",
-  "static/js/2.47a0ac58.chunk.js.map": "/civic-link/static/js/2.47a0ac58.chunk.js.map",
+  "static/js/2.a610f1e6.chunk.js": "/civic-link/static/js/2.a610f1e6.chunk.js",
+  "static/js/2.a610f1e6.chunk.js.map": "/civic-link/static/js/2.a610f1e6.chunk.js.map",
   "index.html": "/civic-link/index.html",
-  "precache-manifest.c9f782846b7d7c7d16156619a89df907.js": "/civic-link/precache-manifest.c9f782846b7d7c7d16156619a89df907.js",
+  "precache-manifest.0aaaccba78e7da3bbc0f4cdbf5fcecaf.js": "/civic-link/precache-manifest.0aaaccba78e7da3bbc0f4cdbf5fcecaf.js",
   "service-worker.js": "/civic-link/service-worker.js",
-  "static/css/main.6780d918.chunk.css.map": "/civic-link/static/css/main.6780d918.chunk.css.map",
-  "static/media/logo.svg": "/civic-link/static/media/logo.5d5d9eef.svg"
+  "static/css/main.2d2dd4f2.chunk.css.map": "/civic-link/static/css/main.2d2dd4f2.chunk.css.map",
+  "static/media/App.css": "/civic-link/static/media/Roboto-Regular-webfont.b3be96cb.woff",
+  "static/media/amy.jpg": "/civic-link/static/media/amy.ecb1f045.jpg",
+  "static/media/obama.JPG": "/civic-link/static/media/obama.6a0dd777.JPG",
+  "static/media/weld.jpg": "/civic-link/static/media/weld.80ee7679.jpg"
 }
