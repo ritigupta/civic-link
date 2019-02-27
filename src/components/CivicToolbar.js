@@ -7,6 +7,7 @@ import Fab from "@material-ui/core/Fab";
 import yellow from "@material-ui/core/colors/yellow";
 import { withStyles } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
+import Grid from "@material-ui/core/Grid";
 
 const styles = theme => ({
   toolBar: {
@@ -41,14 +42,28 @@ class CivicToolbar extends Component {
       <div className={classes.root}>
         <AppBar color="none" style={{ boxShadow: "none" }}>
           <Toolbar classes={classes.toolBar}>
-            <NavLink>
-              <header>CIVIC LINK</header>
-            </NavLink>
-            <Button className={classes.button}>get to know us</Button>
-            <Button className={classes.button}>get informed</Button>
-            <Fab variant="extended" className={classes.cssRoot}>
-              get involved
-            </Fab>
+            <Grid container spacing={30}>
+              <Grid item xs={7}>
+                <NavLink>
+                  <header>CIVIC LINK</header>
+                </NavLink>
+              </Grid>
+              <Grid item xs>
+                <Button>
+                  <h5>get to know us</h5>
+                </Button>
+              </Grid>
+              <Grid item xs>
+                <Button>
+                  <h5>get informed</h5>
+                </Button>
+              </Grid>
+              <Grid item xs>
+                <Fab variant="extended" className={classes.cssRoot}>
+                  <h5>get involved</h5>
+                </Fab>
+              </Grid>
+            </Grid>
           </Toolbar>
         </AppBar>
       </div>

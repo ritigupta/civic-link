@@ -74,7 +74,7 @@ class Candidates extends Component {
                     size="medium"
                     className={classes.cssRoot}
                   >
-                    view full profile
+                    <h6>view full profile</h6>
                   </Button>
                 </CardActions>
               </Card>
@@ -107,7 +107,7 @@ class Candidates extends Component {
                     size="medium"
                     className={classes.cssRoot}
                   >
-                    view full profile
+                    <h6>view full profile</h6>
                   </Button>
                 </CardActions>
               </Card>
@@ -140,7 +140,7 @@ class Candidates extends Component {
                     size="medium"
                     className={classes.cssRoot}
                   >
-                    view full profile
+                    <h6>view full profile</h6>
                   </Button>
                 </CardActions>
               </Card>
