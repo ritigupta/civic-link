@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-//import CivicToolbar from './components/CivicToolbar';
-
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -14,21 +12,16 @@ import yellow from '@material-ui/core/colors/yellow';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Fab from '@material-ui/core/Fab';
-
-//import Typography from '@material-ui/core/Typography';
-
+import classNames from 'classnames';
+import Grid from '@material-ui/core/Grid';
 
 import './App.css';
 
-
 const styles = theme => ({  
-  toolBar: {
-    textAlign: 'left',
-
-  },
   card: {
     width: 301,
     height: 492,
+    boxShadow: '3px 3px 10px 1px rgba(0, 0, 0, .25)',
   },
   media: {
     height: 250,
@@ -46,26 +39,38 @@ const styles = theme => ({
   fab: {
     margin: theme.spacing.unit,
   },
-  
+ 
 });
 
 class App extends Component {
 
   render() {
-    const { classes } = this.props;  
+    const { classes } = this.props; 
     return (
       <div className="App"> 
         <div className={classes.root}>
           <AppBar color="none" 
-            style={{boxShadow: "none"}}>
-            <Toolbar className={classes.toolBar}>
-              <header>
-                CIVIC LINK
-              </header>
-              <Button className={classes.button}>get to know us</Button>
-              <Button className={classes.button}>get informed</Button>
-              <Fab variant="extended" className={classes.cssRoot}>get involved</Fab>
-            </Toolbar>
+            style={{boxShadow: "none"}}
+            className={classes.appBar}
+            position="fixed">
+            <Toolbar className={classNames(classes.toolBar, classes.root)}>
+              <Grid container spacing={30}>
+                <Grid item xs={7}>
+                  <header>
+                    CIVIC LINK
+                  </header>
+                </Grid>
+                <Grid item xs>
+                  <Button><h5>get to know us</h5></Button>
+                </Grid>
+                <Grid item xs>
+                  <Button><h5>get informed</h5></Button>
+                </Grid>
+                <Grid item xs>
+                  <Fab variant="extended" className={classes.cssRoot}><h5>get involved</h5></Fab>
+                </Grid>
+              </Grid>
+            </Toolbar>     
           </AppBar>
         </div>
         <body className="App-header">
@@ -103,7 +108,7 @@ class App extends Component {
                         variant="contained" 
                         size="medium"
                         className={classes.cssRoot}>
-                        view full profile
+                        <h6>view full profile</h6>
                       </Button>
                   </CardActions>
                 </Card>
@@ -136,7 +141,7 @@ class App extends Component {
                         variant="contained" 
                         size="medium"
                         className={classes.cssRoot}>
-                        view full profile
+                        <h6>view full profile</h6>
                       </Button>
                   </CardActions>
                 </Card>
@@ -169,7 +174,7 @@ class App extends Component {
                         variant="contained" 
                         size="medium" 
                         className={classes.cssRoot}>
-                        view full profile
+                        <h6>view full profile</h6>
                       </Button>
                   </CardActions>
                 </Card>
