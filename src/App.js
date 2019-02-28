@@ -12,7 +12,6 @@ import yellow from '@material-ui/core/colors/yellow';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Fab from '@material-ui/core/Fab';
-import classNames from 'classnames';
 import Grid from '@material-ui/core/Grid';
 
 import './App.css';
@@ -53,7 +52,7 @@ class App extends Component {
             style={{boxShadow: "none"}}
             className={classes.appBar}
             position="fixed">
-            <Toolbar className={classNames(classes.toolBar, classes.root)}>
+            <Toolbar className={classes.toolBar}>
               <Grid container spacing={30}>
                 <Grid item xs={7}>
                   <header>
