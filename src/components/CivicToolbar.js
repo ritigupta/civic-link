@@ -49,19 +49,25 @@ class CivicToolbar extends Component {
                 </NavLink>
               </Grid>
               <Grid item xs>
-                <Button>
-                  <h5>get to know us</h5>
-                </Button>
+                <NavLink>
+                  <Button>
+                    <h5>get to know us</h5>
+                  </Button>
+                </NavLink>
               </Grid>
               <Grid item xs>
-                <Button>
-                  <h5>get informed</h5>
-                </Button>
+                <NavLink>
+                  <Button>
+                    <h5>get informed</h5>
+                  </Button>
+                </NavLink>
               </Grid>
               <Grid item xs>
-                <Fab variant="extended" className={classes.cssRoot}>
-                  <h5>get involved</h5>
-                </Fab>
+                <NavLink>
+                  <Fab variant="extended" className={classes.cssRoot}>
+                    <h5>get involved</h5>
+                  </Fab>
+                </NavLink>
               </Grid>
             </Grid>
           </Toolbar>
