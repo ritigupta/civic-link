@@ -44,26 +44,26 @@ class CivicToolbar extends Component {
           <Toolbar classes={classes.toolBar}>
             <Grid container spacing={30}>
               <Grid item xs={7}>
-                <NavLink>
+                <NavLink to="">
                   <header>CIVIC LINK</header>
                 </NavLink>
               </Grid>
               <Grid item xs>
-                <NavLink>
+                <NavLink to="">
                   <Button>
                     <h5>get to know us</h5>
                   </Button>
                 </NavLink>
               </Grid>
               <Grid item xs>
-                <NavLink>
+                <NavLink to="">
                   <Button>
                     <h5>get informed</h5>
                   </Button>
                 </NavLink>
               </Grid>
               <Grid item xs>
-                <NavLink>
+                <NavLink to="">
                   <Fab variant="extended" className={classes.cssRoot}>
                     <h5>get involved</h5>
                   </Fab>
