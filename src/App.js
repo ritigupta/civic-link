@@ -11,10 +11,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <CivicToolbar />
         <BrowserRouter basename={process.env.PUBLIC_URL}>
           <div>
-            {/* <CivicToolbar /> */}
+            <CivicToolbar />
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/candidates" component={Candidates} />
