@@ -6,16 +6,14 @@ import Button from "@material-ui/core/Button";
 import Fab from "@material-ui/core/Fab";
 import yellow from "@material-ui/core/colors/yellow";
 import { withStyles } from "@material-ui/core";
-import { NavLink } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
+import classNames from "classnames";
+import Link from "@material-ui/core/Link";
+import { Link as RouterLink } from "react-router-dom";
 
 const styles = theme => ({
   toolBar: {
     textAlign: "left"
-  },
-  card: {
-    width: 301,
-    height: 492
   },
   media: {
     height: 250
@@ -32,6 +30,9 @@ const styles = theme => ({
   },
   fab: {
     margin: theme.spacing.unit
+  },
+  link: {
+    margin: theme.spacing.unit
   }
 });
 
@@ -42,32 +43,33 @@ class CivicToolbar extends Component {
       <div className={classes.root}>
         <AppBar color="none" style={{ boxShadow: "none" }}>
           <Toolbar classes={classes.toolBar}>
-            <Grid container spacing={30}>
-              <Grid item xs={7}>
-                <NavLink to="">
+            <Grid container spacing={30} alignItems={"space-between"}>
+              <Grid item xs={3} alignContent={"center"}>
+                <Link underline="none" component={RouterLink} to="/">
                   <header>CIVIC LINK</header>
-                </NavLink>
+                </Link>
               </Grid>
-              <Grid item xs>
-                <NavLink to="">
+              <Grid item xs={3} />
+              <Grid item xs={2}>
+                <Link underline="none" component={RouterLink} to="">
                   <Button>
                     <h5>get to know us</h5>
                   </Button>
-                </NavLink>
+                </Link>
               </Grid>
-              <Grid item xs>
-                <NavLink to="">
+              <Grid item xs={2}>
+                <Link underline="none" component={RouterLink} to="./candidates">
                   <Button>
                     <h5>get informed</h5>
                   </Button>
-                </NavLink>
+                </Link>
               </Grid>
-              <Grid item xs>
-                <NavLink to="">
+              <Grid item xs={2}>
+                <Link underline="none" component={RouterLink} to="">
                   <Fab variant="extended" className={classes.cssRoot}>
                     <h5>get involved</h5>
                   </Fab>
-                </NavLink>
+                </Link>
               </Grid>
             </Grid>
           </Toolbar>

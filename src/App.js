@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
 import CivicToolbar from "./components/CivicToolbar";
-import Candidates from "./components/candidates";
-import Error from "./components/error";
-import Home from "./components/home";
+import Candidates from "./views/candidates";
+import Error from "./views/error";
+import Home from "./views/home";
 
 class App extends Component {
   render() {
