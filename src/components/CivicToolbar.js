@@ -10,6 +10,8 @@ import Grid from "@material-ui/core/Grid";
 import classNames from "classnames";
 import Link from "@material-ui/core/Link";
 import { Link as RouterLink } from "react-router-dom";
+import GetInformedDropdown from "./GetInformedDropwdown";
+import GetInvolvedDropdown from "./GetInvolvedDropdown";
 
 const styles = theme => ({
   toolBar: {
@@ -51,23 +53,23 @@ class CivicToolbar extends Component {
               </Grid>
               <Grid item xs={3} />
               <Grid item xs={2}>
-                <Link underline="none" component={RouterLink} to="">
+                <Link underline="none" component={RouterLink} to="/about">
                   <Button>
-                    <h5>get to know us</h5>
+                    <h5>get to Know Us</h5>
                   </Button>
                 </Link>
               </Grid>
               <Grid item xs={2}>
                 <Link underline="none" component={RouterLink} to="./candidates">
                   <Button>
-                    <h5>get informed</h5>
+                    <GetInformedDropdown />
                   </Button>
                 </Link>
               </Grid>
               <Grid item xs={2}>
                 <Link underline="none" component={RouterLink} to="">
                   <Fab variant="extended" className={classes.cssRoot}>
-                    <h5>get involved</h5>
+                    <GetInvolvedDropdown />
                   </Fab>
                 </Link>
               </Grid>
