@@ -28,10 +28,6 @@ self.__precacheManifest = [
     "url": "/civic-link/static/media/Roboto-LightItalic-webfont.ac5bc917.woff"
   },
   {
-    "revision": "6440668c0db3e55f8461a1e2d6f660f7",
-    "url": "/civic-link/static/media/Roboto-Italic-webfont.6440668c.woff"
-  },
-  {
     "revision": "b3be96cbbfd0ff1f3ba3c7c2f58c1441",
     "url": "/civic-link/static/media/Roboto-Regular-webfont.b3be96cb.woff"
   },
@@ -42,6 +38,10 @@ self.__precacheManifest = [
   {
     "revision": "054c6f1a002b2593a4fc0b81572572c1",
     "url": "/civic-link/static/media/Roboto-MediumItalic-webfont.054c6f1a.woff"
+  },
+  {
+    "revision": "6440668c0db3e55f8461a1e2d6f660f7",
+    "url": "/civic-link/static/media/Roboto-Italic-webfont.6440668c.woff"
   },
   {
     "revision": "388938f6332e5e07466341f141effc6c",
