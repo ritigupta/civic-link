@@ -16,7 +16,7 @@ const styles = theme => ({
   card: {
     width: 301,
     height: 492,
-    boxShadow: "5px 5px 10px 1px rgba(0,0,0,0.3)",
+    boxShadow: "3px 6px 10px 1px rgba(0,0,0,0.3)",
   },
   media: {
     height: 250
