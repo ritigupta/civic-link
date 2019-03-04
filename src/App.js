@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./App.css";
-import CivicToolbar from "./components/CivicToolbar";
+import CivicToolbar from "./views/components/CivicToolbar";
 import Candidates from "./views/candidates";
 import Error from "./views/error";
 import Home from "./views/home";

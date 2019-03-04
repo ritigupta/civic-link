@@ -7,7 +7,7 @@ class Home extends Component {
     return (
       <div>
         <div class="home">
-          <h1 class="home">Our mission is to engage and inspire</h1>
+          <h1 class="home">Our mission is to engage and inspire.</h1>
           <br />
           <h2>
             We wish to engage youth in the civic process through voter
