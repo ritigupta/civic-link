@@ -20,7 +20,7 @@ const styles = theme => ({
   },
   media: {
     height: 250,
-    margin: "16px 16px 0px 16px"
+    margin: "17px 17px 0px 17px"
   },
   cssRoot: {
     color: theme.palette.getContrastText(yellow[600]),
