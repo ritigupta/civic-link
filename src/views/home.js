@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import MarchImage from "./images/march-for-our-lives.jpg";
+import SearchBar from "./components/SearchBar.js";
 
 class Home extends Component {
   render() {
@@ -15,6 +16,14 @@ class Home extends Component {
             help them get involved in their communities and create lasting
             political change.
           </h2>
+          <br />
+          <br />
+          <h3 class="home">
+            Search your city to find political events near you!
+          </h3>
+          <br />
+          <br />
+          <SearchBar />
         </div>
         <div>
           <img
