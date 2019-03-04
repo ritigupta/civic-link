@@ -68,6 +68,7 @@ header {
   font-weight: 900;
   font-size: 50px;
   color: #ffd600;
+
 }
 
 header:hover {
@@ -150,5 +151,9 @@ img.home {
   float: right;
   width: 45%;
   padding-right: 25px;
+}
+
+html {
+  background-color: #f9f9f9;
 }
 
