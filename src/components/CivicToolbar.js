@@ -15,7 +15,7 @@ import GetInvolvedDropdown from "./GetInvolvedDropdown";
 
 const styles = theme => ({
   toolBar: {
-    textAlign: "left",
+    textAlign: "left"
   },
   media: {
     height: 250
@@ -28,7 +28,7 @@ const styles = theme => ({
     }
   },
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   fab: {
     margin: theme.spacing.unit
@@ -46,9 +46,9 @@ class CivicToolbar extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <AppBar color="none" style={{ boxShadow: "none" }}  className={classes.grid}>
+        <AppBar color="none" style={{ boxShadow: "none"}}  className={classes.grid}>
           <Toolbar classes={classes.toolBar}>
-            <Grid container spacing={24} alignItems={"space-between"}>
+            <Grid container spacing={24} alignItems={"space-between"} style={{marginTop: 10}}>
               <Grid item xs={3} alignContent={"center"}>
                 <Link underline="none" component={RouterLink} to="/">
                   <header>CIVIC LINK</header>

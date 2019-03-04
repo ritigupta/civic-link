@@ -10,9 +10,7 @@ import Button from "@material-ui/core/Button";
 import yellow from "@material-ui/core/colors/yellow";
 
 const styles = theme => ({
-  toolBar: {
-    textAlign: "left"
-  },
+  
   card: {
     width: 301,
     height: 492,
@@ -44,113 +42,116 @@ class Candidates extends Component {
     const { classes } = this.props;
     return (
       <body className="App-header">
-        <div>
-          <div class="flex-container">
-            <div class="flex-item">
+          <div class="flex-large-container">
+            <aside class="flex-large-item" style={{width:185, paddingTop:30, marginRight: 50}}>
               <h1>Make an informed vote.</h1>
               <h2>Scroll to meet your candidates.</h2>
-            </div>
-            <div class="flex-item">
-              <Card className={classes.card}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    style={{ height: 0, paddingTop: "69%" }}
-                    image={require("./images/obama.JPG")}
-                    title="Barack Obama"
-                  />
-                  <CardContent>
-                    <h3>Barack Obama</h3>
-                    <h4>Democrat</h4>
-                    <p>
-                      <br />
-                      Affordable health care
-                      <br />
-                      Immigration reform
-                      <br />
-                      Renewable energy
-                    </p>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button
-                    variant="contained"
-                    size="medium"
-                    className={classes.cssRoot}
-                  >
-                    <h6>view full profile</h6>
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
-            <div class="flex-item">
-              <Card className={classes.card}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    style={{ height: 0, paddingTop: "69%" }}
-                    image={require("./images/weld.jpg")}
-                    title="William Weld"
-                  />
-                  <CardContent>
-                    <h3>William Weld</h3>
-                    <h4>Republican</h4>
-                    <p>
-                      <br />
-                      Marriage equity
-                      <br />
-                      Drug policy reform
-                      <br />
-                      Loosening gun control
-                    </p>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button
-                    variant="contained"
-                    size="medium"
-                    className={classes.cssRoot}
-                  >
-                    <h6>view full profile</h6>
-                  </Button>
-                </CardActions>
-              </Card>
-            </div>
-            <div class="flex-item">
-              <Card className={classes.card}>
-                <CardActionArea>
-                  <CardMedia
-                    className={classes.media}
-                    style={{ height: 0, paddingTop: "69%" }}
-                    image={require("./images/amy.jpg")}
-                    title="Amy Klobuchar"
-                  />
-                  <CardContent>
-                    <h3>Amy Klobuchar</h3>
-                    <h4>Democrat</h4>
-                    <p>
-                      <br />
-                      Education reform
-                      <br />
-                      Renewable energy
-                      <br />
-                      Support for veterans
-                    </p>
-                  </CardContent>
-                </CardActionArea>
-                <CardActions>
-                  <Button
-                    variant="contained"
-                    size="medium"
-                    className={classes.cssRoot}
-                  >
-                    <h6>view full profile</h6>
-                  </Button>
-                </CardActions>
-              </Card>
+            </aside>
+
+            <div class="flex-large-item">
+              <div class="flex-card-container">
+                <div class="flex-card">
+                  <Card className={classes.card}>
+                    <CardActionArea>
+                      <CardMedia
+                        className={classes.media}
+                        style={{ height: 0, paddingTop: "69%" }}
+                        image={require("./images/obama.JPG")}
+                        title="Barack Obama"
+                      />
+                      <CardContent>
+                        <h3>Barack Obama</h3>
+                        <h4>Democrat</h4>
+                        <p>
+                          <br />
+                          Affordable health care
+                          <br />
+                          Immigration reform
+                          <br />
+                          Renewable energy
+                        </p>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button
+                        variant="contained"
+                        size="medium"
+                        className={classes.cssRoot}
+                      >
+                        <h6>view full profile</h6>
+                      </Button>
+                    </CardActions>
+                  </Card>
+                </div>
+                <div class="flex-card">
+                  <Card className={classes.card}>
+                    <CardActionArea>
+                      <CardMedia
+                        className={classes.media}
+                        style={{ height: 0, paddingTop: "69%" }}
+                        image={require("./images/weld.jpg")}
+                        title="William Weld"
+                      />
+                      <CardContent>
+                        <h3>William Weld</h3>
+                        <h4>Republican</h4>
+                        <p>
+                          <br />
+                          Marriage equity
+                          <br />
+                          Drug policy reform
+                          <br />
+                          Loosening gun control
+                        </p>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button
+                        variant="contained"
+                        size="medium"
+                        className={classes.cssRoot}
+                      >
+                        <h6>view full profile</h6>
+                      </Button>
+                    </CardActions>
+                  </Card>
+                </div>
+                <div class="flex-card">
+                  <Card className={classes.card}>
+                    <CardActionArea>
+                      <CardMedia
+                        className={classes.media}
+                        style={{ height: 0, paddingTop: "69%" }}
+                        image={require("./images/amy.jpg")}
+                        title="Amy Klobuchar"
+                      />
+                      <CardContent>
+                        <h3>Amy Klobuchar</h3>
+                        <h4>Democrat</h4>
+                        <p>
+                          <br />
+                          Education reform
+                          <br />
+                          Renewable energy
+                          <br />
+                          Support for veterans
+                        </p>
+                      </CardContent>
+                    </CardActionArea>
+                    <CardActions>
+                      <Button
+                        variant="contained"
+                        size="medium"
+                        className={classes.cssRoot}
+                      >
+                        <h6>view full profile</h6>
+                      </Button>
+                    </CardActions>
+                  </Card>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
       </body>
     );
   }
