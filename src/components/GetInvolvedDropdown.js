@@ -52,7 +52,7 @@ class GetInvolvedDropdown extends React.Component {
             aria-haspopup="true"
             onMouseEnter={this.handleToggle}
           >
-            <h5>get informed</h5>
+            <h5>get involved</h5>
           </Button>
           <Popper open={open} anchorEl={this.anchorEl} transition disablePortal>
             {({ TransitionProps, placement }) => (
