@@ -53,20 +53,29 @@
   box-sizing: border-box;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-evenly;
+.flex-large-container {
+  display: flex;  
+  justify-content: flex-start;
   margin-top: 5px;
+  margin-left: 25px;
 }
 
-.flex-item {
-  padding: 20px;
+.flex-card-container {
+  display: flex;  
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.flex-card {
+  padding: 17px;
 }
 
 header {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 50px;
+  line-height: 1em;
   color: #ffd600;
 }
 
@@ -81,6 +90,7 @@ h1 {
   font-size: 36px;
   font-style: italic;
   color: #2ba6eb;
+  margin-bottom: 7px;
 }
 
 h2 {
@@ -150,5 +160,9 @@ img.home {
   float: right;
   width: 45%;
   padding-right: 25px;
+}
+
+html {
+  background-color: #f9f9f9;
 }
 
