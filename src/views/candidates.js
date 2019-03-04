@@ -25,7 +25,8 @@ const styles = theme => ({
   cssRoot: {
     color: theme.palette.getContrastText(yellow[600]),
     backgroundColor: yellow[600],
-    margin: "7px 0px 0px 11px",
+    borderRadius: "15px",
+    margin: "7px 0px 0px 12px",
     "&:hover": {
       backgroundColor: yellow[700]
     }
