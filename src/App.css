@@ -133,7 +133,6 @@ p {
 }
 
 .App-body {
-  background-color: #fbfbfb;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -152,3 +151,4 @@ img.home {
   width: 45%;
   padding-right: 25px;
 }
+

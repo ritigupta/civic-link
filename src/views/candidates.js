@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles, withTheme } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -15,7 +15,8 @@ const styles = theme => ({
   },
   card: {
     width: 301,
-    height: 492
+    height: 492,
+    boxShadow: "3px 6px 10px 1px rgba(0,0,0,0.3)",
   },
   media: {
     height: 250

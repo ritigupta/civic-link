@@ -7,7 +7,7 @@ import Fab from "@material-ui/core/Fab";
 import yellow from "@material-ui/core/colors/yellow";
 import { withStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import classNames from "classnames";
+//import classNames from "classnames";
 import Link from "@material-ui/core/Link";
 import { Link as RouterLink } from "react-router-dom";
 import GetInformedDropdown from "./GetInformedDropwdown";
@@ -45,7 +45,7 @@ class CivicToolbar extends Component {
       <div className={classes.root}>
         <AppBar color="none" style={{ boxShadow: "none" }}>
           <Toolbar classes={classes.toolBar}>
-            <Grid container spacing={30} alignItems={"space-between"}>
+            <Grid container spacing={24} alignItems={"space-between"}>
               <Grid item xs={3} alignContent={"center"}>
                 <Link underline="none" component={RouterLink} to="/">
                   <header>CIVIC LINK</header>
