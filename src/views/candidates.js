@@ -16,14 +16,16 @@ const styles = theme => ({
   card: {
     width: 301,
     height: 492,
-    boxShadow: "3px 6px 10px 1px rgba(0,0,0,0.3)",
+    boxShadow: "3px 6px 10px 1px rgba(0,0,0,0.3)"
   },
   media: {
-    height: 250
+    height: 250,
+    margin: "16px 16px 0px 16px"
   },
   cssRoot: {
     color: theme.palette.getContrastText(yellow[600]),
     backgroundColor: yellow[600],
+    margin: "10px 0px 0px 10px",
     "&:hover": {
       backgroundColor: yellow[700]
     }
@@ -52,7 +54,7 @@ class Candidates extends Component {
                 <CardActionArea>
                   <CardMedia
                     className={classes.media}
-                    style={{ height: 0, paddingTop: "75%" }}
+                    style={{ height: 0, paddingTop: "69%" }}
                     image={require("./images/obama.JPG")}
                     title="Barack Obama"
                   />
@@ -85,7 +87,7 @@ class Candidates extends Component {
                 <CardActionArea>
                   <CardMedia
                     className={classes.media}
-                    style={{ height: 0, paddingTop: "75%" }}
+                    style={{ height: 0, paddingTop: "69%" }}
                     image={require("./images/weld.jpg")}
                     title="William Weld"
                   />
@@ -118,7 +120,7 @@ class Candidates extends Component {
                 <CardActionArea>
                   <CardMedia
                     className={classes.media}
-                    style={{ height: 0, paddingTop: "75%" }}
+                    style={{ height: 0, paddingTop: "69%" }}
                     image={require("./images/amy.jpg")}
                     title="Amy Klobuchar"
                   />
