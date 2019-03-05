@@ -54,14 +54,14 @@
 }
 
 .flex-large-container {
-  display: flex;  
+  display: flex;
   justify-content: flex-start;
   margin-top: 5px;
   margin-left: 25px;
 }
 
 .flex-card-container {
-  display: flex;  
+  display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
   margin-top: 20px;
@@ -98,6 +98,11 @@ h2 {
   font-weight: 300;
   font-size: 24px;
   color: #727272;
+}
+
+h2.get-involved:hover {
+  color: black;
+  transition: 0.3s;
 }
 
 h3 {
@@ -169,4 +174,3 @@ img.home {
 html {
   background-color: #f9f9f9;
 }
-

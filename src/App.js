@@ -10,10 +10,9 @@ import About from "./views/about";
 import VoterRegistration from "./views/voter-registration";
 import EducationalResources from "./views/educational-resources";
 import GeneralPoliticalInfo from "./views/general-political-info";
-import PoliticalForum from "./views/political-forum";
 import PollingSites from "./views/polling-sites";
-import EventPlanningGuide from "./views/event-planning-guide";
 import CallingRepsGuide from "./views/calling-reps-guide";
+import GetInvolved from "./views/get-involved";
 
 class App extends Component {
   render() {
@@ -35,13 +34,9 @@ class App extends Component {
                 path="/general-political-info"
                 component={GeneralPoliticalInfo}
               />
-              <Route path="/political-forum" component={PoliticalForum} />
               <Route path="/polling-sites" component={PollingSites} />
-              <Route
-                path="/event-planning-guide"
-                component={EventPlanningGuide}
-              />
               <Route path="/calling-reps-guide" component={CallingRepsGuide} />
+              <Route path="/get-involved" component={GetInvolved} />
               <Route component={Error} />
             </Switch>
           </div>

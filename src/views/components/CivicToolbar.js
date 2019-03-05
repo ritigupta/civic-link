@@ -10,7 +10,6 @@ import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
 import { Link as RouterLink } from "react-router-dom";
 import GetInformedDropdown from "./GetInformedDropwdown";
-import GetInvolvedDropdown from "./GetInvolvedDropdown";
 
 const styles = theme => ({
   toolBar: {
@@ -45,9 +44,18 @@ class CivicToolbar extends Component {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <AppBar color="none" style={{ boxShadow: "none"}}  className={classes.grid}>
+        <AppBar
+          color="none"
+          style={{ boxShadow: "none" }}
+          className={classes.grid}
+        >
           <Toolbar classes={classes.toolBar}>
-            <Grid container spacing={24} alignItems={"space-between"} style={{marginTop: 10}}>
+            <Grid
+              container
+              spacing={24}
+              alignItems={"space-between"}
+              style={{ marginTop: 10 }}
+            >
               <Grid item xs={3} alignContent={"center"}>
                 <Link underline="none" component={RouterLink} to="/">
                   <header>CIVIC LINK</header>
@@ -69,9 +77,13 @@ class CivicToolbar extends Component {
                 </Link>
               </Grid>
               <Grid item xs={2}>
-                <Link underline="none" component={RouterLink} to="">
+                <Link
+                  underline="none"
+                  component={RouterLink}
+                  to="./get-involved"
+                >
                   <Fab variant="extended" className={classes.cssRoot}>
-                    <GetInvolvedDropdown />
+                    <h5>Get Involved</h5>
                   </Fab>
                 </Link>
               </Grid>
