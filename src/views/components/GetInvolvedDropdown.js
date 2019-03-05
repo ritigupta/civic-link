@@ -17,6 +17,9 @@ const styles = theme => ({
   },
   paper: {
     marginRight: theme.spacing.unit * 2
+  },
+  menu: {
+    textTransform: "lowercase",
   }
 });
 
@@ -52,7 +55,7 @@ class GetInvolvedDropdown extends React.Component {
             aria-haspopup="true"
             onMouseEnter={this.handleToggle}
           >
-            <h5>get informed</h5>
+            <h5>get involved</h5>
           </Button>
           <Popper open={open} anchorEl={this.anchorEl} transition disablePortal>
             {({ TransitionProps, placement }) => (
@@ -66,7 +69,7 @@ class GetInvolvedDropdown extends React.Component {
               >
                 <Paper>
                   <ClickAwayListener onClickAway={this.handleClose}>
-                    <MenuList>
+                    <MenuList className={classes.menu}>
                       <Link
                         underline="none"
                         component={RouterLink}

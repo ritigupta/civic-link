@@ -17,6 +17,9 @@ const styles = theme => ({
   },
   paper: {
     marginRight: theme.spacing.unit * 2
+  },
+  menu: {
+    textTransform: "lowercase",
   }
 });
 
@@ -66,7 +69,7 @@ class GetInformedDropdown extends React.Component {
               >
                 <Paper>
                   <ClickAwayListener onClickAway={this.handleClose}>
-                    <MenuList>
+                    <MenuList className={classes.menu}>
                       <Link
                         underline="none"
                         component={RouterLink}
