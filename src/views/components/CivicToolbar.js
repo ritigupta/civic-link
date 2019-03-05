@@ -7,7 +7,6 @@ import Fab from "@material-ui/core/Fab";
 import yellow from "@material-ui/core/colors/yellow";
 import { withStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-//import classNames from "classnames";
 import Link from "@material-ui/core/Link";
 import { Link as RouterLink } from "react-router-dom";
 import GetInformedDropdown from "./GetInformedDropwdown";

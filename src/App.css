@@ -107,6 +107,10 @@ h3 {
   color: #2ba6eb;
 }
 
+h3.home {
+  color: black;
+}
+
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
