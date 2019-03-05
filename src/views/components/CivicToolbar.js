@@ -70,11 +70,9 @@ class CivicToolbar extends Component {
                 </Link>
               </Grid>
               <Grid item xs={2}>
-                <Link underline="none" component={RouterLink} to="./candidates">
-                  <Button>
-                    <GetInformedDropdown />
-                  </Button>
-                </Link>
+                <Button>
+                  <GetInformedDropdown />
+                </Button>
               </Grid>
               <Grid item xs={2}>
                 <Link

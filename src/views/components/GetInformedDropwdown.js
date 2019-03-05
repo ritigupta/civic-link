@@ -19,7 +19,7 @@ const styles = theme => ({
     marginRight: theme.spacing.unit * 2
   },
   menu: {
-    textTransform: "lowercase",
+    textTransform: "lowercase"
   }
 });
 
@@ -53,7 +53,7 @@ class GetInformedDropdown extends React.Component {
             }}
             aria-owns={open ? "menu-list-grow" : undefined}
             aria-haspopup="true"
-            onMouseEnter={this.handleToggle}
+            onClick={this.handleToggle}
           >
             <h5>get informed</h5>
           </Button>
