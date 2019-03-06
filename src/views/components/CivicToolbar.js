@@ -57,7 +57,7 @@ class CivicToolbar extends Component {
               <Grid item xs={2}>
                 <Link underline="none" component={RouterLink} to="/about">
                   <Button>
-                    <h5>get to Know Us</h5>
+                    <h5>get to know us</h5>
                   </Button>
                 </Link>
               </Grid>
