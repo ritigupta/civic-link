@@ -141,6 +141,13 @@ p {
   color: #000000;
 }
 
+p.mission {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #000000;
+}
+
 .App {
   text-align: left;
   padding-top: 100px;

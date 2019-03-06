@@ -10,12 +10,12 @@ class Home extends Component {
         <div class="home">
           <h1 class="home">Our mission is to engage and inspire.</h1>
           <br />
-          <h2>
+          <p class="mission statement">
             We wish to engage youth in the civic process through voter
             registration, voter education, and other activities and events that
             help them get involved in their communities and create lasting
             political change.
-          </h2>
+          </p>
           <br />
           <br />
           <h3 class="home">
