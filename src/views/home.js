@@ -18,7 +18,7 @@ class Home extends Component {
           </p>
           <br />
           <br />
-          <h5 className="event">
+          <h5>
             Search your city to find political events near you!
           </h5>
           <br />
