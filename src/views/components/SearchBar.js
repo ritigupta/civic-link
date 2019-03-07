@@ -10,9 +10,6 @@ const styles = theme => ({
   root: {
     width: 400
   },
-  margin: {
-    // margin: theme.spacing.unit
-  },
   input: {
     flex: 1
   },
