@@ -28,7 +28,7 @@ class About extends Component {
     return (
       <body className="App-header">
           <div className="flex-large-container">
-            <aside class="flex-large-item" style={{width:200, paddingTop:30, marginRight: 20}}>
+            <aside className="flex-large-item" style={{width:200, paddingTop:30, marginRight: 20}}>
               <h1>We're just like you.</h1>
               <br />
               <p className="mission">
