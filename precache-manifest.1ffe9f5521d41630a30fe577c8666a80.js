@@ -1,23 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "d3e528d9ca58d216b29710f06b339f9d",
-    "url": "/civic-link/static/media/Roboto-Medium-webfont.d3e528d9.woff"
+    "revision": "ac5bc9170e97ed5ec8159f89f95bdbcb",
+    "url": "/civic-link/static/media/Roboto-LightItalic-webfont.ac5bc917.woff"
   },
   {
-    "revision": "16c750ff7f7cb5376bb7",
-    "url": "/civic-link/static/css/main.9156c745.chunk.css"
+    "revision": "c93f5d94f3d0706b7c95",
+    "url": "/civic-link/static/css/main.9075a691.chunk.css"
   },
   {
     "revision": "24765f2779e71f73666b",
     "url": "/civic-link/static/js/runtime~main.24765f27.js"
   },
   {
-    "revision": "934e8948b028e446dd68",
-    "url": "/civic-link/static/js/2.934e8948.chunk.js"
+    "revision": "cd86892b9bcd38c01042",
+    "url": "/civic-link/static/js/2.cd86892b.chunk.js"
   },
   {
     "revision": "279463e0a528b083b8c026c0cbdb7c06",
     "url": "/civic-link/static/media/march-for-our-lives.279463e0.jpg"
+  },
+  {
+    "revision": "2bad70f2d08429a28dfbebd4c237924b",
+    "url": "/civic-link/static/media/facebook.2bad70f2.png"
   },
   {
     "revision": "a1ca6bfaf9ca8c144df2e26cf734ca07",
@@ -32,16 +36,12 @@ self.__precacheManifest = [
     "url": "/civic-link/static/media/activism.45fc8ff6.jpeg"
   },
   {
-    "revision": "ac5bc9170e97ed5ec8159f89f95bdbcb",
-    "url": "/civic-link/static/media/Roboto-LightItalic-webfont.ac5bc917.woff"
-  },
-  {
     "revision": "f0fc91f2311b5251806eefac5bd03fa1",
     "url": "/civic-link/static/media/Roboto-Light-webfont.f0fc91f2.woff"
   },
   {
-    "revision": "16c750ff7f7cb5376bb7",
-    "url": "/civic-link/static/js/main.16c750ff.chunk.js"
+    "revision": "c93f5d94f3d0706b7c95",
+    "url": "/civic-link/static/js/main.c93f5d94.chunk.js"
   },
   {
     "revision": "b3be96cbbfd0ff1f3ba3c7c2f58c1441",
@@ -50,6 +50,10 @@ self.__precacheManifest = [
   {
     "revision": "6440668c0db3e55f8461a1e2d6f660f7",
     "url": "/civic-link/static/media/Roboto-Italic-webfont.6440668c.woff"
+  },
+  {
+    "revision": "d3e528d9ca58d216b29710f06b339f9d",
+    "url": "/civic-link/static/media/Roboto-Medium-webfont.d3e528d9.woff"
   },
   {
     "revision": "054c6f1a002b2593a4fc0b81572572c1",
@@ -76,7 +80,7 @@ self.__precacheManifest = [
     "url": "/civic-link/static/media/amy.ecb1f045.jpg"
   },
   {
-    "revision": "e612bb92dd798dfb704011d0b4d82178",
+    "revision": "67bdf4270fc2d342c856287a54838cc3",
     "url": "/civic-link/index.html"
   }
 ];
