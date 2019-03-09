@@ -136,6 +136,8 @@ class Candidates extends Component {
                         variant="contained"
                         size="medium"
                         className={classes.cssRoot}
+                        href="https://www.amyklobuchar.com/"
+                        target="_blank"
                       >
                         <h6>view full profile</h6>
                       </Button>

@@ -42,7 +42,7 @@ class About extends Component {
             <div className="flex-large-item" style={{width: 1000, marginTop:30, marginLeft: 20}} >
               <div className={classes.root}>
                   {/* Carousel of images */}
-                  <GridList className={classes.gridList} cols={1.25} cellHeight={450} spacing={35}>
+                  <GridList className={classes.gridList} cols={1.25} cellHeight={450} spacing={30}>
                       <GridListTile>
                         <img src={VoicesImage} alt="youth activists holding up a youth voices matter sign" />
                       </GridListTile>
