@@ -12,6 +12,9 @@ class VoterRegistration extends Component {
             Every vote counts, and yours is no exception. The following resources can help you get started in the state of Washington.
           </p>
         </aside>
+
+        <div class="flex-large-item">
+        </div>
       </div>
     );
   }
