@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withStyles, withTheme } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -52,26 +51,24 @@ class Candidates extends Component {
               <div class="flex-card-container">
                 <div class="flex-card">
                   <Card className={classes.card}>
-                    <CardActionArea>
-                      <CardMedia
-                        className={classes.media}
-                        style={{ height: 0, paddingTop: "69%" }}
-                        image={require("./images/obama.JPG")}
-                        title="Barack Obama"
-                      />
-                      <CardContent>
-                        <h3>Barack Obama</h3>
-                        <h4>Democrat</h4>
-                        <p>
-                          <br />
-                          Affordable health care
-                          <br />
-                          Immigration reform
-                          <br />
-                          Renewable energy
-                        </p>
-                      </CardContent>
-                    </CardActionArea>
+                    <CardMedia
+                      className={classes.media}
+                      style={{ height: 0, paddingTop: "69%" }}
+                      image={require("./images/obama.JPG")}
+                      title="Barack Obama"
+                    />
+                    <CardContent>
+                      <h3>Barack Obama</h3>
+                      <h4>Democrat</h4>
+                      <p>
+                        <br />
+                        Affordable health care
+                        <br />
+                        Immigration reform
+                        <br />
+                        Renewable energy
+                      </p>
+                    </CardContent>
                     <CardActions>
                       <Button
                         variant="contained"
@@ -85,26 +82,24 @@ class Candidates extends Component {
                 </div>
                 <div class="flex-card">
                   <Card className={classes.card}>
-                    <CardActionArea>
-                      <CardMedia
-                        className={classes.media}
-                        style={{ height: 0, paddingTop: "69%" }}
-                        image={require("./images/weld.jpg")}
-                        title="William Weld"
-                      />
-                      <CardContent>
-                        <h3>William Weld</h3>
-                        <h4>Republican</h4>
-                        <p>
-                          <br />
-                          Marriage equity
-                          <br />
-                          Drug policy reform
-                          <br />
-                          Loosening gun control
-                        </p>
-                      </CardContent>
-                    </CardActionArea>
+                    <CardMedia
+                      className={classes.media}
+                      style={{ height: 0, paddingTop: "69%" }}
+                      image={require("./images/weld.jpg")}
+                      title="William Weld"
+                    />
+                    <CardContent>
+                      <h3>William Weld</h3>
+                      <h4>Republican</h4>
+                      <p>
+                        <br />
+                        Marriage equity
+                        <br />
+                        Drug policy reform
+                        <br />
+                        Loosening gun control
+                      </p>
+                    </CardContent>
                     <CardActions>
                       <Button
                         variant="contained"
@@ -118,26 +113,24 @@ class Candidates extends Component {
                 </div>
                 <div class="flex-card">
                   <Card className={classes.card}>
-                    <CardActionArea>
-                      <CardMedia
-                        className={classes.media}
-                        style={{ height: 0, paddingTop: "69%" }}
-                        image={require("./images/amy.jpg")}
-                        title="Amy Klobuchar"
-                      />
-                      <CardContent>
-                        <h3>Amy Klobuchar</h3>
-                        <h4>Democrat</h4>
-                        <p>
-                          <br />
-                          Education reform
-                          <br />
-                          Renewable energy
-                          <br />
-                          Support for veterans
-                        </p>
-                      </CardContent>
-                    </CardActionArea>
+                    <CardMedia
+                      className={classes.media}
+                      style={{ height: 0, paddingTop: "69%" }}
+                      image={require("./images/amy.jpg")}
+                      title="Amy Klobuchar"
+                    />
+                    <CardContent>
+                      <h3>Amy Klobuchar</h3>
+                      <h4>Democrat</h4>
+                      <p>
+                        <br />
+                        Education reform
+                        <br />
+                        Renewable energy
+                        <br />
+                        Support for veterans
+                      </p>
+                    </CardContent>
                     <CardActions>
                       <Button
                         variant="contained"
