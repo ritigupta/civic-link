@@ -12,7 +12,7 @@ const styles = theme => ({
   
   card: {
     width: 301,
-    height: 492,
+    height: 490,
     boxShadow: "3px 6px 10px 1px rgba(0,0,0,0.3)"
   },
   media: {
@@ -31,9 +31,6 @@ const styles = theme => ({
   root: {
     flexGrow: 1
   },
-  fab: {
-    margin: theme.spacing.unit
-  }
 });
 
 class Candidates extends Component {
