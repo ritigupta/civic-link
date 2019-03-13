@@ -81,7 +81,7 @@ class CivicToolbar extends Component {
                   to="./get-involved"
                 >
                   <Fab variant="extended" className={classes.cssRoot}>
-                    <h5>Get Involved</h5>
+                    <h5>get Involved</h5>
                   </Fab>
                 </Link>
               </Grid>
