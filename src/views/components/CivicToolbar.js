@@ -74,16 +74,12 @@ class CivicToolbar extends Component {
                   <GetInformedDropdown />
                 </Button>
               </Grid>
-              <Grid item xs={2}>
-                <Link
-                  underline="none"
-                  component={RouterLink}
-                  to="./get-involved"
-                >
-                  <Fab variant="extended" className={classes.cssRoot}>
-                    <h5>get involved</h5>
-                  </Fab>
-                </Link>
+              <Grid item xs={2}>    
+                <Fab variant="extended" className={classes.cssRoot}
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfqf-f6vWcwIk6xSeTleTt3CAEdqdmavXQ4bBA_U1iJjr-QpQ/viewform"
+                  target="_blank">
+                  <h5>get involved</h5>
+                </Fab>
               </Grid>
             </Grid>
           </Toolbar>

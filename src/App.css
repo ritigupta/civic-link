@@ -153,7 +153,7 @@ p {
   color: #000000;
 }
 
-table {
+/* table {
   background: #fff;
   border-collapse: collapse;
   color: #222;
@@ -178,6 +178,121 @@ tr:first-child td {
   background: #2ba6eb;
   border: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+} */
+
+:root {
+  --cal-bg-color: #fff;
+  --cal-border-radius: 0;
+  --cal-border-color: #e7e9ed;
+  --cal-today-bg-color: #10989E;
+  --cal-today-color: #fff;
+  --cal-selected-bg-color: #E7E9ED;
+  --cal-selected-color: #333;
+}
+
+#cal *, #cal *:before, #cal *:after {
+  box-sizing: border-box;
+}
+
+#cal {
+  background-color: var(--cal-bg-color);
+  border-radius: var(--cal-border-radius);
+  border: solid 1px var(--cal-border-color);
+  box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+#cal .cal-btn {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: button;
+  background: none;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: normal;
+  min-width: 27px;
+  outline: none;
+  overflow: visible;
+  padding: 0;
+  text-align: center;
+  /* &:active {
+    border-radius: var(--cal-border-radius);
+    box-shadow: 0 0 0 2px rgba(var(--cal-today-bg-color), 0.1)
+  } */
+}
+
+#cal .cal-header {
+  align-items: center;
+  display: flex;
+  padding: 1.2rem 1.4rem;
+}
+
+#cal .cal-header svg {
+  fill: var(--cal-today-bg-color);
+}
+
+#cal .cal-header__label {
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+#cal .cal-week {
+  background-color: var(--cal-selected-bg-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cal .cal-week span {
+  flex-direction: column;
+  flex: 0 0 14.28%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  max-width: 14.28%;
+  padding: 1.2rem 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#cal .cal-body {
+  background-color: rgba(var(--cal-selected-bg-color), 0.3);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cal .cal-date {
+  align-items: center;
+  background-color: #fff;
+  border-radius: var(--cal-border-radius);
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+  padding: 1.2rem 0;
+}
+
+#cal .cal-date--active {
+  cursor: pointer;
+}
+
+#cal .cal-date--today {
+  background-color: var(--cal-today-bg-color);
+  color: var(--cal-today-color);
+}
+
+#cal .cal-date--selected {
+  background-color: var(--cal-selected-bg-color);
+  color: var(--cal-selected-color);
+}
+
+#cal .cal-date--disabled {
+  border-radius: 0;
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .App {

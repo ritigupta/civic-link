@@ -7,8 +7,6 @@ import FacebookImage from "./images/facebook.png"
 import ProtestImage from "./images/protest.jpeg";
 import VoicesImage from "./images/youth-voices-matter.jpg";
 import ActivismImage from "./images/activism.jpeg";
-import classNames from 'classnames';
-
 
 const styles = ({
   root: {
