@@ -41,7 +41,7 @@ class VoterRegistration extends Component {
             <h1>Get out the VOTE.</h1>
             <br />
             <p className="mission">
-              Every vote counts, and yours is no exception. The following resources can help you get started in the state of Washington.
+              Every vote counts, and yours is no exception. These resources can help you get started in Washington state.
             </p>
           </aside>
 
