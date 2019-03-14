@@ -32,11 +32,18 @@ function CustomizedInputBase(props) {
       <p className={classes.inputLabel}>City</p>
       <FormControl className={classes.margin}>
         <TextField
+          // onChange={props.getEvents}
           className={classes.input}
+          type="text"
+          name="city"
           InputProps={{
             endAdornment: (
               <InputAdornment position="end">
-                <IconButton className={classes.iconButton} aria-label="Search">
+                <IconButton
+                  onClick={props.getEvents}
+                  className={classes.iconButton}
+                  aria-label="Search"
+                >
                   <SearchIcon />
                 </IconButton>
               </InputAdornment>
@@ -53,3 +60,17 @@ CustomizedInputBase.propTypes = {
 };
 
 export default withStyles(styles)(CustomizedInputBase);
+
+// const SearchBar = props => {
+//   return (
+//     <div>
+//       <p>City</p>
+//       <form onSubmit={props.getEvents}>
+//         <input type="text" name="city" />
+//         <button>
+//           <SearchIcon />
+//         </button>
+//       </form>
+//     </div>
+//   );
+// };
