@@ -1,3 +1,100 @@
+// import React, { Component } from "react";
+// import PropTypes from "prop-types";
+// import MarchImage from "./images/march-for-our-lives.jpg";
+// import SearchBar from "./components/SearchBar.js";
+
+// class Home extends Component {
+//   state = {
+//     eventList: null
+//   };
+//   getEvents = e => {
+//     e.preventDefault();
+//     var events = [
+//       "February 27th, 2019",
+//       "10 am –",
+//       " Women's March",
+//       " @ Cal Anderson Park",
+//       "11 am –",
+//       " Seattle Climate Strike",
+//       " @ Cal Anderson Park",
+//       "3 pm –",
+//       " Urban Poverty Forum",
+//       " @ Hugo House",
+//       "6 pm –",
+//       " Brewing for Change",
+//       " @ Lagunita's Tap Room",
+//       "6 pm –",
+//       " Resist Trump Tuesday",
+//       " @ Henry M. Jackson Federal Building"
+//     ];
+//     this.setState({ eventList: events });
+
+//   };
+//   render() {
+//     return (
+//       <div>
+//         <div className="home">
+//           <h1>Our mission is to engage and inspire.</h1>
+//           <br />
+//           <p className="mission">
+//             We wish to engage youth in the civic process through voter
+//             registration, voter education, and other activities and events that
+//             help them get involved in their communities and create lasting
+//             political change.
+//           </p>
+//           <br />
+//           <br />
+//           <h5>Search your city to find political events near you!</h5>
+//           <br />
+//           <br />
+//           <SearchBar getEvents={this.getEvents} />
+//           <br />
+//           <br />
+//           {this.state.eventList ? (
+//             <div>
+//               <h5>{this.state.eventList[0]}</h5>
+//               <span>{this.state.eventList[1]}</span>
+//               <a href="https://womensmarch.com/">{this.state.eventList[2]}</a>
+//               <span>{this.state.eventList[3]}</span> <br />
+//               <span>{this.state.eventList[4]}</span>
+//               <a href="https://www.thestranger.com/events/39564863/seattle-climate-strike">
+//                 {this.state.eventList[5]}
+//               </a>
+//               <span>{this.state.eventList[6]}</span> <br />
+//               <span>{this.state.eventList[7]}</span>
+//               <a href="https://www.thestranger.com/events/39100678/urban-poverty-forum-2019">
+//                 {this.state.eventList[8]}
+//               </a>
+//               <span>{this.state.eventList[9]}</span> <br />
+//               <span>{this.state.eventList[10]}</span>
+//               <a href="https://www.thestranger.com/events/39530761/brewing-for-change">
+//                 {this.state.eventList[11]}
+//               </a>
+//               <span>{this.state.eventList[12]}</span> <br />
+//               <span>{this.state.eventList[13]}</span>
+//               <a href="https://www.thestranger.com/events/25967466/resist-trump-tuesday">
+//                 {this.state.eventList[14]}
+//               </a>
+//               <span>{this.state.eventList[15]}</span>
+//             </div>
+//           ) : (
+//             <p>Please enter the name of your city.</p>
+//           )}
+//         </div>
+
+//         <div>
+//           <img
+//             class="home"
+//             src={MarchImage}
+//             alt="a March For Our Lives protest"
+//           />
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+
+// ///// all new work from here on down
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import MarchImage from "./images/march-for-our-lives.jpg";
@@ -77,25 +174,44 @@ class Home extends Component {
             <div>
               <h5>{this.state.eventList[0]}</h5>
               <span>{this.state.eventList[1]}</span>
+<<<<<<< HEAD
               <a href="https://womensmarch.com/" target="_blank">{this.state.eventList[2]}</a>
               <span>{this.state.eventList[3]}</span> <br />
               <span>{this.state.eventList[4]}</span>
               <a href="https://www.thestranger.com/events/39564863/seattle-climate-strike" target="_blank">
+=======
+              <a href="https://womensmarch.com/">{this.state.eventList[2]}</a>
+              <span>{this.state.eventList[3]}</span> <br />
+              <span>{this.state.eventList[4]}</span>
+              <a href="https://www.thestranger.com/events/39564863/seattle-climate-strike">
+>>>>>>> 33f0cb5828da4752105c17d56c96f64af1c5e308
                 {this.state.eventList[5]}
               </a>
               <span>{this.state.eventList[6]}</span> <br />
               <span>{this.state.eventList[7]}</span>
+<<<<<<< HEAD
               <a href="https://www.thestranger.com/events/39100678/urban-poverty-forum-2019" target="_blank">
+=======
+              <a href="https://www.thestranger.com/events/39100678/urban-poverty-forum-2019">
+>>>>>>> 33f0cb5828da4752105c17d56c96f64af1c5e308
                 {this.state.eventList[8]}
               </a>
               <span>{this.state.eventList[9]}</span> <br />
               <span>{this.state.eventList[10]}</span>
+<<<<<<< HEAD
               <a href="https://www.thestranger.com/events/39530761/brewing-for-change" target="_blank">
+=======
+              <a href="https://www.thestranger.com/events/39530761/brewing-for-change">
+>>>>>>> 33f0cb5828da4752105c17d56c96f64af1c5e308
                 {this.state.eventList[11]}
               </a>
               <span>{this.state.eventList[12]}</span> <br />
               <span>{this.state.eventList[13]}</span>
+<<<<<<< HEAD
               <a href="https://www.thestranger.com/events/25967466/resist-trump-tuesday" target="_blank">
+=======
+              <a href="https://www.thestranger.com/events/25967466/resist-trump-tuesday">
+>>>>>>> 33f0cb5828da4752105c17d56c96f64af1c5e308
                 {this.state.eventList[14]}
               </a>
               <span>{this.state.eventList[15]}</span>
