@@ -54,6 +54,15 @@ class GetInvolved extends Component {
               <ExpansionPanelDetails>
                 <Typography>
                   Yes you!
+                  <br className="form"/>
+                  Are you interested in getting involved with your community while advocating for youth representation and engagement? If yes, Civic Link would be perfect for you.
+                  <br className="form"/>
+                  We plan projects to engage youth, attend events around King County to learn, and advocate for civic engagement in our schools. You could too! 
+                  <br className="form"/>
+                  Joining our forces would allow you to: <br />
+                  – Develop leadership skills <br />
+                  – Form connections with members of the community <br />
+                  – Add enriching and unique experiences to your resume
                 </Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
