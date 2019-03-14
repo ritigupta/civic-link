@@ -8,13 +8,13 @@ import { InputAdornment, FormControl } from "@material-ui/core";
 
 const styles = theme => ({
   root: {
-    width: 400
+    width: 250
   },
   input: {
     flex: 1
   },
   iconButton: {
-    padding: 10,
+    padding: 5,
     color: "#000000"
   },
   inputLabel: {

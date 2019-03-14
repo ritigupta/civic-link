@@ -77,44 +77,25 @@ class Home extends Component {
             <div>
               <h5>{this.state.eventList[0]}</h5>
               <span>{this.state.eventList[1]}</span>
-<<<<<<< HEAD
               <a href="https://womensmarch.com/" target="_blank">{this.state.eventList[2]}</a>
               <span>{this.state.eventList[3]}</span> <br />
               <span>{this.state.eventList[4]}</span>
               <a href="https://www.thestranger.com/events/39564863/seattle-climate-strike" target="_blank">
-=======
-              <a href="https://womensmarch.com/">{this.state.eventList[2]}</a>
-              <span>{this.state.eventList[3]}</span> <br />
-              <span>{this.state.eventList[4]}</span>
-              <a href="https://www.thestranger.com/events/39564863/seattle-climate-strike">
->>>>>>> 33f0cb5828da4752105c17d56c96f64af1c5e308
                 {this.state.eventList[5]}
               </a>
               <span>{this.state.eventList[6]}</span> <br />
               <span>{this.state.eventList[7]}</span>
-<<<<<<< HEAD
               <a href="https://www.thestranger.com/events/39100678/urban-poverty-forum-2019" target="_blank">
-=======
-              <a href="https://www.thestranger.com/events/39100678/urban-poverty-forum-2019">
->>>>>>> 33f0cb5828da4752105c17d56c96f64af1c5e308
                 {this.state.eventList[8]}
               </a>
               <span>{this.state.eventList[9]}</span> <br />
               <span>{this.state.eventList[10]}</span>
-<<<<<<< HEAD
               <a href="https://www.thestranger.com/events/39530761/brewing-for-change" target="_blank">
-=======
-              <a href="https://www.thestranger.com/events/39530761/brewing-for-change">
->>>>>>> 33f0cb5828da4752105c17d56c96f64af1c5e308
                 {this.state.eventList[11]}
               </a>
               <span>{this.state.eventList[12]}</span> <br />
               <span>{this.state.eventList[13]}</span>
-<<<<<<< HEAD
               <a href="https://www.thestranger.com/events/25967466/resist-trump-tuesday" target="_blank">
-=======
-              <a href="https://www.thestranger.com/events/25967466/resist-trump-tuesday">
->>>>>>> 33f0cb5828da4752105c17d56c96f64af1c5e308
                 {this.state.eventList[14]}
               </a>
               <span>{this.state.eventList[15]}</span>
