@@ -8,18 +8,25 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import TextField from '@material-ui/core/TextField';
-import MyVoteImage from "./images/my-vote-my-voice.jpg";
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Button from '@material-ui/core/Button';
+import yellow from "@material-ui/core/colors/yellow";
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import Slide from '@material-ui/core/Slide';
+
 
 const styles = theme => ({
   root: {
     display: 'flex',
   },
-
   group: {
     margin: `${theme.spacing.unit}px 0`,
   },
@@ -27,7 +34,20 @@ const styles = theme => ({
     marginRight: theme.spacing.unit,
     width: 300,
   },
+  cssRoot: {
+    color: theme.palette.getContrastText(yellow[600]),
+    backgroundColor: yellow[600],
+    borderRadius: "15px",
+    margin: "0px 0px 30px 0px",
+    "&:hover": {
+      backgroundColor: yellow[700]
+    }
+  }
 });
+
+function Transition(props) {
+  return <Slide direction="up" {...props} />;
+}
 
 class GetInvolved extends Component {
   state = {
@@ -36,6 +56,14 @@ class GetInvolved extends Component {
 
   handleChange = event => {
     this.setState({ value: event.target.value });
+  };
+
+  handleClickOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleClose = () => {
+    this.setState({ open: false });
   };
 
   render() {
@@ -174,7 +202,36 @@ class GetInvolved extends Component {
                 />
                 <br className="form" />
 
+                <Button color="primary"
+                  variant="contained" 
+                  size="large" 
+                  className={classes.cssRoot} 
+                  onClick={this.handleClickOpen}>
+                  <h6>Submit</h6>              
+                </Button>
+                <Dialog
+                  open={this.state.open}
+                  TransitionComponent={Transition}
+                  keepMounted
+                  onClose={this.handleClose}
+                  aria-labelledby="alert-dialog-title"
+                  aria-describedby="alert-dialog-description"
+                >
+                  <DialogTitle id="alert-dialog-title">{"All done!"}</DialogTitle>
+                  <DialogContent>
+                    <DialogContentText id="alert-dialog-description">
+                      You have successfully applied for Civic Link. We'll be reaching out to you via email shortly!
+                    </DialogContentText>
+                  </DialogContent>
+                  <DialogActions>
+                    <Button onClick={this.handleClose}>
+                      Sweet
+                    </Button>
+                  </DialogActions>
+                </Dialog>
+
               </FormControl>
+              
             </div>
           </div>
 
