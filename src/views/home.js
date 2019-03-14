@@ -99,6 +99,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import MarchImage from "./images/march-for-our-lives.jpg";
 import SearchBar from "./components/SearchBar.js";
+import Calendar from "./components/calendar/Calendar.js"
 
 class Home extends Component {
   state = {

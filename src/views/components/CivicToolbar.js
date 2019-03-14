@@ -28,9 +28,7 @@ const styles = theme => ({
   root: {
     flexGrow: 1
   },
-  fab: {
-    margin: theme.spacing.unit
-  },
+ 
   link: {
     margin: theme.spacing.unit
   },
