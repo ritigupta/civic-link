@@ -7,6 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import yellow from "@material-ui/core/colors/yellow";
+import SearchBar from "./components/SearchBar.js";
+
 
 const styles = theme => ({
   
@@ -41,7 +43,9 @@ class Candidates extends Component {
           <div class="flex-large-container">
             <aside class="flex-large-item" style={{width:185, paddingTop:30, marginRight: 50}}>
               <h1>Make an informed vote.</h1>
-              <h2>Scroll to meet your candidates.</h2>
+              <p className="mission">Enter your city to meet the candidates who represent you.</p>
+              <br className="aside" />
+              <SearchBar/>
             </aside>
 
             <div class="flex-large-item">
