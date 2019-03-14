@@ -1,4 +1,4 @@
-/* import React, { Component } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 
@@ -6,13 +6,75 @@ class Calendar extends Component {
   render() {
     return (
         <div>
-            <head>
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-                    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"/>
-            </head>
-
             <body>
-                <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
+
+                <div>
+                <header>
+                    
+                    <h2>March 2019</h2>
+                    
+                </header>
+                <table>
+                <tr>
+                    <td>S</td>
+                    <td>M</td>
+                    <td>T</td>
+                    <td>W</td>
+                    <td>Th</td>
+                    <td>F</td>
+                    <td>S</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td class="selected">14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+                </table>
+                </div>
+
+
+            </body>
+{/*                 <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
                     <div class="card">
                         <h3 class="card-header" id="monthAndYear"></h3>
                         <table class="table table-bordered table-responsive-sm" id="calendar">
@@ -78,9 +140,8 @@ class Calendar extends Component {
                         </select></form>
                     </div>
                 </div>
-                <script src="scripts.js"></script>
+                <script src="scripts.js"></script> */}
 
-            </body>
         </div>
     );
   }
@@ -90,4 +151,4 @@ Calendar.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default Calendar; */
+export default Calendar;
