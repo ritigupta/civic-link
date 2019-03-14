@@ -21,6 +21,8 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
+import BallotImage from "./images/ballot.jpg";
+
 
 
 const styles = theme => ({
@@ -75,7 +77,7 @@ class GetInvolved extends Component {
           <aside class="flex-large-item" style={{width:450, paddingTop:30, marginRight: 50}}>
             <h1>Join the movement.</h1>
             <p className="mission">We’re looking for youth who are passionate about activism to join Civic Link. Click the drop down to learn more, or fill out the form if you think you're a good fit! </p>
-            <ExpansionPanel style={{marginBottom:50, marginTop: 35}}>
+            <ExpansionPanel style={{marginBottom:45, marginTop: 35}}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                 <p>Who, me?</p>
               </ExpansionPanelSummary>
@@ -94,13 +96,13 @@ class GetInvolved extends Component {
                 </Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
-            {/* <div class="flex-large-item" style={{marginTop:30, marginRight: 30}}>
+            <div class="flex-large-item" style={{ marginRight: 30}}>
               <img
-                src={MyVoteImage}
+                src={BallotImage}
                 width="450"
-                alt="my vote is my voice graphic"
+                alt="individuals casting ballots graphic"
               />
-            </div> */}
+            </div>
           </aside>
 
           <div class="flex-large-item" style={{width: 500, marginTop:30, marginLeft: 20, marginRight: 20}}>
