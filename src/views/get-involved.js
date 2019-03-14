@@ -42,7 +42,7 @@ const styles = theme => ({
     "&:hover": {
       backgroundColor: yellow[700]
     }
-  }
+  },
 });
 
 function Transition(props) {
@@ -85,7 +85,7 @@ class GetInvolved extends Component {
                   <br className="form"/>
                   Are you interested in getting involved with your community while advocating for youth representation and engagement? If yes, Civic Link would be perfect for you.
                   <br className="form"/>
-                  We plan projects to engage youth, attend events around King County to learn,git and advocate for civic engagement in our schools. You could too! 
+                  We plan projects to engage youth, attend events around King County to learn, and advocate for civic engagement in our schools. You could too! 
                   <br className="form"/>
                   Joining our forces would allow you to: <br />
                   – Develop leadership skills <br />
@@ -141,11 +141,11 @@ class GetInvolved extends Component {
                   value={this.state.value}
                   onChange={this.handleChange}
                 >
-                  <FormControlLabel value="Freshman" control={<Radio />} label="Freshman" />
-                  <FormControlLabel value="Sophomore" control={<Radio />} label="Sophomore" />
-                  <FormControlLabel value="Junior" control={<Radio />} label="Junior" />
-                  <FormControlLabel value="Senior" control={<Radio />} label="Senior" />
-                  <FormControlLabel value="College Student" control={<Radio />} label="College Student" />
+                  <FormControlLabel value="Freshman" control={<Radio style={{color:"#727272"}}/>} label="Freshman" />
+                  <FormControlLabel value="Sophomore" control={<Radio style={{color:"#727272"}}/>} label="Sophomore" />
+                  <FormControlLabel value="Junior" control={<Radio style={{color:"#727272"}}/>} label="Junior" />
+                  <FormControlLabel value="Senior" control={<Radio style={{color:"#727272"}}/>} label="Senior" />
+                  <FormControlLabel value="College Student" control={<Radio style={{color:"#727272"}}/>} label="College Student" />
                 </RadioGroup>
                 <br className="form" />
                 <FormLabel component="legend">What experience do you have with activism and/or organizing?*</FormLabel>
@@ -186,9 +186,9 @@ class GetInvolved extends Component {
                   value={this.state.value}
                   onChange={this.handleChange}
                 >
-                  <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
-                  <FormControlLabel value="No" control={<Radio />} label="No" />
-                  <FormControlLabel value="Maybe" control={<Radio />} label="Maybe" />
+                  <FormControlLabel value="Yes" control={<Radio style={{color:"#727272"}}/>} label="Yes" />
+                  <FormControlLabel value="No" control={<Radio style={{color:"#727272"}}/>} label="No" />
+                  <FormControlLabel value="Maybe" control={<Radio style={{color:"#727272"}}/>} label="Maybe" />
                 </RadioGroup>
                 <br className="form" />
                 <FormLabel component="legend">How many hours per week would you be able to commit?*</FormLabel>
