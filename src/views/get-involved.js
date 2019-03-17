@@ -74,7 +74,7 @@ class GetInvolved extends Component {
     return (
       <body className="App-header">
         <div class="flex-large-container">
-          <aside class="flex-large-item" style={{width:450, paddingTop:30, marginRight: 50}}>
+          <aside class="flex-large-item" style={{width: 500, marginTop: 30, marginRight: 50 }}>
             <h1>Join the movement.</h1>
             <p className="mission">We’re looking for youth who are passionate about activism to join Civic Link. Click the drop down to learn more, or fill out the form if you think you're a good fit! </p>
             <ExpansionPanel style={{marginBottom:45, marginTop: 35}}>
@@ -96,13 +96,13 @@ class GetInvolved extends Component {
                 </Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
-            <div class="flex-large-item" style={{ marginRight: 30}}>
+            {/* <div class="flex-large-item" style={{ marginRight: 30}}>
               <img
                 src={BallotImage}
                 width="450"
                 alt="individuals casting ballots graphic"
               />
-            </div>
+            </div> */}
           </aside>
 
           <div class="flex-large-item" style={{width: 500, marginTop:30, marginLeft: 20, marginRight: 20}}>
@@ -221,13 +221,14 @@ class GetInvolved extends Component {
                 >
                   <DialogTitle id="alert-dialog-title">{"All done!"}</DialogTitle>
                   <DialogContent>
+                    
                     <DialogContentText id="alert-dialog-description">
                       You have successfully applied for Civic Link. We'll be reaching out to you via email shortly!
                     </DialogContentText>
                   </DialogContent>
                   <DialogActions>
                     <Button onClick={this.handleClose}>
-                      Sweet
+                      Sweet!
                     </Button>
                   </DialogActions>
                 </Dialog>

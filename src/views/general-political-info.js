@@ -7,7 +7,7 @@ class GeneralPoliticalInfo extends Component {
       <div>
         <div class="home">
           <h1 class="home">
-            This is the place to learn about how government works!
+            Coming Soon
           </h1>
         </div>
       </div>
