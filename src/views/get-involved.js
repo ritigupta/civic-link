@@ -21,7 +21,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
-import BallotImage from "./images/ballot.jpg";
+import SeattleImage from "./images/march.jpg";
 
 
 
@@ -77,7 +77,7 @@ class GetInvolved extends Component {
           <aside class="flex-large-item" style={{width: 500, marginTop: 30, marginRight: 50 }}>
             <h1>Join the movement.</h1>
             <p className="mission">We’re looking for youth who are passionate about activism to join Civic Link. Click the drop down to learn more, or fill out the form if you think you're a good fit! </p>
-            <ExpansionPanel style={{marginBottom:45, marginTop: 35}}>
+            <ExpansionPanel style={{marginBottom:35, marginTop: 30}}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                 <p>Who, me?</p>
               </ExpansionPanelSummary>
@@ -96,13 +96,13 @@ class GetInvolved extends Component {
                 </Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
-            {/* <div class="flex-large-item" style={{ marginRight: 30}}>
+            <div class="flex-large-item" style={{ marginRight: 30}}>
               <img
-                src={BallotImage}
-                width="450"
+                src={SeattleImage}
+                width="500"
                 alt="individuals casting ballots graphic"
               />
-            </div> */}
+            </div>
           </aside>
 
           <div class="flex-large-item" style={{width: 500, marginTop:30, marginLeft: 20, marginRight: 20}}>
@@ -111,7 +111,7 @@ class GetInvolved extends Component {
             <div className={classes.root}>
 
               <FormControl component="fieldset" className={classes.formControl}>
-                <FormLabel component="legend">Name*</FormLabel>
+                <FormLabel component="legend">Name</FormLabel>
                 <TextField
                   required
                   id="standard-required"
@@ -119,7 +119,7 @@ class GetInvolved extends Component {
                   margin="normal"
                 />
                 <br className="space" />
-                <FormLabel component="legend">Phone Number*</FormLabel>
+                <FormLabel component="legend">Phone Number</FormLabel>
                 <TextField
                   required
                   id="standard-required"
@@ -127,7 +127,7 @@ class GetInvolved extends Component {
                   margin="normal"
                 />
                 <br className="space" />
-                <FormLabel component="legend">Email*</FormLabel>
+                <FormLabel component="legend">Email</FormLabel>
                 <TextField
                   required
                   id="standard-required"
@@ -135,7 +135,7 @@ class GetInvolved extends Component {
                   margin="normal"
                 />
                 <br className="space" />
-                <FormLabel component="legend">What grade are you in?*</FormLabel>
+                <FormLabel component="legend">What grade are you in?</FormLabel>
                 <RadioGroup
                   aria-label="Grade"
                   name="grade1"
@@ -150,7 +150,7 @@ class GetInvolved extends Component {
                   <FormControlLabel value="College Student" control={<Radio style={{color:"#727272"}}/>} label="College Student" />
                 </RadioGroup>
                 <br className="space" />
-                <FormLabel component="legend">What experience do you have with activism and/or organizing?*</FormLabel>
+                <FormLabel component="legend">What experience do you have with activism and/or organizing?</FormLabel>
                 <TextField
                   id="standard-multiline-flexible"
                   multiline
@@ -160,7 +160,7 @@ class GetInvolved extends Component {
                   margin="normal"
                 />
                 <br className="space" />
-                <FormLabel component="legend">What unique perspective or skill set would you bring to the table?*</FormLabel>
+                <FormLabel component="legend">What unique perspective or skill set would you bring to the table?</FormLabel>
                 <TextField
                   id="standard-multiline-flexible"
                   multiline
@@ -170,7 +170,7 @@ class GetInvolved extends Component {
                   margin="normal"
                 />
                 <br className="space" />
-                <FormLabel component="legend">Why is it important for youth to be civically engaged?*</FormLabel>
+                <FormLabel component="legend">Why is it important for youth to be civically engaged?</FormLabel>
                 <TextField
                   id="standard-multiline-flexible"
                   multiline
@@ -193,7 +193,7 @@ class GetInvolved extends Component {
                   <FormControlLabel value="Maybe" control={<Radio style={{color:"#727272"}}/>} label="Maybe" />
                 </RadioGroup>
                 <br className="space" />
-                <FormLabel component="legend">How many hours per week would you be able to commit?*</FormLabel>
+                <FormLabel component="legend">How many hours per week would you be able to commit?</FormLabel>
                 <TextField
                   id="standard-multiline-flexible"
                   multiline

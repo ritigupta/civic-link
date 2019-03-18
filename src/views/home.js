@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ListenImage from "./images/young-people-politics.jpg";
 import SearchBar from "./components/SearchBar.js";
+import Chips from "./components/Chips.js"
 import CalendarImage from "./images/calendar.png";
 import Chip from '@material-ui/core/Chip';
 import { withStyles } from "@material-ui/core";
@@ -20,15 +21,12 @@ const styles = theme => ({
     boxShadow: "2px 3px 10px 2px  rgba(0,0,0,0.25)",
     marginBottom: "8px",
   },
-  clickable: {
-    backgroundColor: yellow[600]
-  }
 });
-
 
 class Home extends Component {
   state = {
-    eventList: null
+    eventList: null,
+    backgroundColor: "#ffffff"
   };
   getEvents = e => {
     e.preventDefault();
@@ -47,8 +45,13 @@ class Home extends Component {
     ];
     this.setState({ eventList: events });
   };
+  handleClick = () => {
+    this.setState({ backgroundColor: "#000000" });
+  };
+
   render() {
     const { classes } = this.props;
+    const { backgroundColor } = this.state;
     return (
       <body className="App-header">
         <div className="container">
@@ -119,11 +122,13 @@ class Home extends Component {
           <div className="flex-large-item"style={{marginTop: 75, marginLeft: 30}}>
             <h6>Filter by Issue</h6>
             <br></br>
-            <div className={classes.root}>
+            <Chips />
+{/*             <div className={classes.root}>
               <Chip
                 label="Gun Violence"
                 className={classes.chip}
                 clickable={true}
+                onClick={this.handleClick}
               />
               <Chip
                 label="Environment / Climate Change"
@@ -160,7 +165,7 @@ class Home extends Component {
                 className={classes.chip}
                 clickable={true}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </body>
