@@ -15,9 +15,6 @@ const styles = theme => ({
   toolBar: {
     textAlign: "left"
   },
-  media: {
-    height: 250
-  },
   cssRoot: {
     color: theme.palette.getContrastText(yellow[600]),
     backgroundColor: yellow[600],
@@ -56,7 +53,7 @@ class CivicToolbar extends Component {
             >
               <Grid item xs={3} alignContent={"center"}>
                 <Link underline="none" component={RouterLink} to="/">
-                  <header>CIVIC LINK</header>
+                  <header>civic link</header>
                 </Link>
               </Grid>
               <Grid item xs={3} />
