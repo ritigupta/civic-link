@@ -7,7 +7,7 @@ class PoliticalForum extends Component {
       <div>
         <div class="home">
           <h1 class="home">
-            There's nothing here yet, but you can help change that!
+            Coming Soon
           </h1>
         </div>
       </div>

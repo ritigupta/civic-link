@@ -21,6 +21,8 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Slide from '@material-ui/core/Slide';
+import BallotImage from "./images/ballot.jpg";
+
 
 
 const styles = theme => ({
@@ -72,21 +74,21 @@ class GetInvolved extends Component {
     return (
       <body className="App-header">
         <div class="flex-large-container">
-          <aside class="flex-large-item" style={{width:450, paddingTop:30, marginRight: 50}}>
+          <aside class="flex-large-item" style={{width: 500, marginTop: 30, marginRight: 50 }}>
             <h1>Join the movement.</h1>
             <p className="mission">We’re looking for youth who are passionate about activism to join Civic Link. Click the drop down to learn more, or fill out the form if you think you're a good fit! </p>
-            <ExpansionPanel style={{marginBottom:50, marginTop: 35}}>
+            <ExpansionPanel style={{marginBottom:45, marginTop: 35}}>
               <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                 <p>Who, me?</p>
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Typography>
                   Yes you!
-                  <br className="form"/>
+                  <br className="space"/>
                   Are you interested in getting involved with your community while advocating for youth representation and engagement? If yes, Civic Link would be perfect for you.
-                  <br className="form"/>
+                  <br className="space"/>
                   We plan projects to engage youth, attend events around King County to learn, and advocate for civic engagement in our schools. You could too! 
-                  <br className="form"/>
+                  <br className="space"/>
                   Joining our forces would allow you to: <br />
                   – Develop leadership skills <br />
                   – Form connections with members of the community <br />
@@ -94,11 +96,11 @@ class GetInvolved extends Component {
                 </Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
-            {/* <div class="flex-large-item" style={{marginTop:30, marginRight: 30}}>
+            {/* <div class="flex-large-item" style={{ marginRight: 30}}>
               <img
-                src={MyVoteImage}
+                src={BallotImage}
                 width="450"
-                alt="my vote is my voice graphic"
+                alt="individuals casting ballots graphic"
               />
             </div> */}
           </aside>
@@ -116,7 +118,7 @@ class GetInvolved extends Component {
                   className={classes.textField}
                   margin="normal"
                 />
-                <br className="form" />
+                <br className="space" />
                 <FormLabel component="legend">Phone Number*</FormLabel>
                 <TextField
                   required
@@ -124,7 +126,7 @@ class GetInvolved extends Component {
                   className={classes.textField}
                   margin="normal"
                 />
-                <br className="form" />
+                <br className="space" />
                 <FormLabel component="legend">Email*</FormLabel>
                 <TextField
                   required
@@ -132,7 +134,7 @@ class GetInvolved extends Component {
                   className={classes.textField}
                   margin="normal"
                 />
-                <br className="form" />
+                <br className="space" />
                 <FormLabel component="legend">What grade are you in?*</FormLabel>
                 <RadioGroup
                   aria-label="Grade"
@@ -147,7 +149,7 @@ class GetInvolved extends Component {
                   <FormControlLabel value="Senior" control={<Radio style={{color:"#727272"}}/>} label="Senior" />
                   <FormControlLabel value="College Student" control={<Radio style={{color:"#727272"}}/>} label="College Student" />
                 </RadioGroup>
-                <br className="form" />
+                <br className="space" />
                 <FormLabel component="legend">What experience do you have with activism and/or organizing?*</FormLabel>
                 <TextField
                   id="standard-multiline-flexible"
@@ -157,7 +159,7 @@ class GetInvolved extends Component {
                   className={classes.textField}
                   margin="normal"
                 />
-                <br className="form" />
+                <br className="space" />
                 <FormLabel component="legend">What unique perspective or skill set would you bring to the table?*</FormLabel>
                 <TextField
                   id="standard-multiline-flexible"
@@ -167,7 +169,7 @@ class GetInvolved extends Component {
                   className={classes.textField}
                   margin="normal"
                 />
-                <br className="form" />
+                <br className="space" />
                 <FormLabel component="legend">Why is it important for youth to be civically engaged?*</FormLabel>
                 <TextField
                   id="standard-multiline-flexible"
@@ -177,7 +179,7 @@ class GetInvolved extends Component {
                   className={classes.textField}
                   margin="normal"
                 />
-                <br className="form" />
+                <br className="space" />
                 <FormLabel component="legend">Are you interested in a leadership position?</FormLabel>
                 <RadioGroup
                   aria-label="leadership position"
@@ -190,7 +192,7 @@ class GetInvolved extends Component {
                   <FormControlLabel value="No" control={<Radio style={{color:"#727272"}}/>} label="No" />
                   <FormControlLabel value="Maybe" control={<Radio style={{color:"#727272"}}/>} label="Maybe" />
                 </RadioGroup>
-                <br className="form" />
+                <br className="space" />
                 <FormLabel component="legend">How many hours per week would you be able to commit?*</FormLabel>
                 <TextField
                   id="standard-multiline-flexible"
@@ -200,7 +202,7 @@ class GetInvolved extends Component {
                   className={classes.textField}
                   margin="normal"
                 />
-                <br className="form" />
+                <br className="space" />
 
                 <Button color="primary"
                   variant="contained" 
@@ -219,13 +221,14 @@ class GetInvolved extends Component {
                 >
                   <DialogTitle id="alert-dialog-title">{"All done!"}</DialogTitle>
                   <DialogContent>
+                    
                     <DialogContentText id="alert-dialog-description">
                       You have successfully applied for Civic Link. We'll be reaching out to you via email shortly!
                     </DialogContentText>
                   </DialogContent>
                   <DialogActions>
                     <Button onClick={this.handleClose}>
-                      Sweet
+                      Sweet!
                     </Button>
                   </DialogActions>
                 </Dialog>

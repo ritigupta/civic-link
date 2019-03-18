@@ -6,7 +6,7 @@ class EducationalResources extends Component {
     return (
       <div>
         <div class="home">
-          <h1 class="home">Tryna learn? Well, you came to the right place!</h1>
+          <h1 class="home">Coming Soon</h1>
         </div>
       </div>
     );
