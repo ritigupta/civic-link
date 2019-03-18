@@ -4,9 +4,8 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import { withStyles } from "@material-ui/core/styles";
 import FacebookImage from "./images/facebook.png"
-import ProtestImage from "./images/protest.jpeg";
+import ProtestImage from "./images/students-young.jpg";
 import VoicesImage from "./images/youth-voices-matter.jpg";
-import SeattleImage from "./images/march.jpg";
 import ActivismImage from "./images/activism.jpeg";
 
 const styles = ({
@@ -47,9 +46,6 @@ class About extends Component {
                       </GridListTile>
                       <GridListTile>
                         <img src={ActivismImage} alt="youth activists speaking at a rally" />
-                      </GridListTile>
-                      <GridListTile>
-                        <img src={SeattleImage} alt="students leading the Seattle March for Our Lives protest" />
                       </GridListTile>
                       <GridListTile>
                         <img src={ProtestImage} alt="youth engagement through protesting" />
