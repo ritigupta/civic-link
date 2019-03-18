@@ -16,7 +16,7 @@ const styles = theme => ({
     display: "flex"
   },
   paper: {
-    marginRight: theme.spacing.unit
+    marginRight: theme.spacing.unit * 2
   },
   menu: {
     textTransform: "lowercase"
@@ -75,19 +75,12 @@ class GetInformedDropdown extends React.Component {
                         component={RouterLink}
                         to="/voter-registration"
                       >
-                        <MenuItem>Voter Registration</MenuItem>
+                        <MenuItem>Voting</MenuItem>
                       </Link>
                       <Link
                         underline="none"
                         component={RouterLink}
                         to="/educational-resources"
-                      >
-                        <MenuItem>Educational Resources</MenuItem>
-                      </Link>
-                      <Link
-                        underline="none"
-                        component={RouterLink}
-                        to="/general-political-info"
                       >
                         <MenuItem>General Political Info</MenuItem>
                       </Link>
