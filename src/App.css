@@ -77,6 +77,7 @@ header {
   font-size: 50px;
   line-height: 1em;
   color: #ffd600;
+  margin-bottom: 25px;
 }
 
 header:hover {
@@ -207,8 +208,12 @@ html {
   background-color: #f9f9f9;
 }
 
-.form {
+.space {
   line-height: 3em;
+}
+
+.break {
+  line-height: 2em;
 }
 
 .aside {
@@ -234,5 +239,5 @@ hr {
   left: 100px;
   width: 300px;
   background-color: #f9f9f9;
-  padding: 35px;
+  padding: 30px;
 }
