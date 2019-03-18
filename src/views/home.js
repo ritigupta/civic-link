@@ -34,15 +34,15 @@ class Home extends Component {
     e.preventDefault();
     var events = [
       "Featured Events",
-      "10 am –",
+      "3/1 –",
       " Women's March",
-      "11 am –",
+      "3/15 –",
       " Seattle Climate Strike",
-      "3 pm –",
+      "3/17 –",
       " Urban Poverty Forum",
-      "6 pm –",
+      "3/26 –",
       " Brewing for Change",
-      "6 pm –",
+      "3/26 –",
       " Resist Trump Tuesday",
     ];
     this.setState({ eventList: events });
